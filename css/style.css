@@ -1,0 +1,329 @@
+
+/* CSS variables */
+@import url(./partials/_variables.css);
+
+/* Global styling */
+@import url(./partials/_global.css);
+
+/* START NAVIGATION */
+
+.navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+
+.navbar {
+  padding: 1rem 20rem;
+}
+
+.nav-link {
+  font-family: var(--roboto);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1.6rem;
+  color: var(--title-color);
+}
+
+.active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;          /* -Webkit:To apply gradient color to text*/
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* END NAVIGATION */
+
+/* Start Banner Area */
+.site-banner {
+  background: url(../img/banner/home-banner.png) no-repeat;
+  background-position: 0% 50%;
+}
+
+.site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+}
+
+/* Underscore after Hey */
+
+.site-title h3:after {
+  content: "";
+  height: 2px;
+  width: 32vh;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.site-title h1 {
+  font-size: 5rem;
+}
+
+.site-title h4 {
+  font-size: 2rem;
+}
+
+.banner-image > img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+/* End Banner Area */
+
+/* Start About Area */
+
+.about-area {
+  padding: 8rem;
+}
+.about-title h2 > span {
+  display: block;
+  font: normal bold 49px/60px var(--roboto);
+  letter-spacing: 15px;
+}
+
+.paragraph > p {
+  padding: 0.4rem 0;
+}
+
+/* End About Area */
+
+/* Start Brand area */
+
+.brand-area {
+  padding: 1rem 20rem;
+  margin-bottom: 4rem;
+}
+
+.col-lg-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.single-brand {
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1.8rem 0;
+  margin: 0.9rem 0;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.single-brand > img {
+  width: 50%;
+}
+
+.single-brand:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+
+.single-brand:hover > img {
+  filter: brightness(0.15);
+}
+
+.experience-area {
+  padding-left: 1rem;
+}
+
+.experience-area span {
+  display: block;
+}
+
+.years-area {
+  background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+  padding: 2rem 0;
+  width: 40rem;
+  height: 18rem;
+  padding-left: 8rem;
+  position: relative;
+}
+
+.bg-panel {
+  position: absolute;
+  left: -190;
+  top: 0%;
+  background-color: #e029290a;
+  width: 400px;
+  height: 400px;
+  margin-left: 130px;
+  z-index: -1;
+}
+
+.years {
+  font: normal bold 84px/40px var(--roboto);
+  color: var(--primary-color2);
+}
+
+.years-area h2 > span {
+  font: normal 600 22px/35px var(--roboto);
+}
+
+.call-area {
+  padding-left: 10rem;
+}
+
+/* End brand area */
+
+/* Start Services area */
+
+.services-area {
+  padding: 7rem 2rem;
+}
+
+.services-title {
+  padding: 0 14rem;
+}
+
+.services-title h1 {
+  font-size: 40px;
+}
+
+.services {
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 5rem 0.5rem;
+  transition: box-shadow 0.7s ease;
+}
+
+.services:hover {
+  box-shadow: var(--box-shadow);
+}
+
+/* End services area */
+
+/* Start Project Area */
+
+.project-area {
+  padding: 4rem 0;
+}
+
+.button-group button {
+  background: transparent;
+  border: none;
+  font: normal 700 16px/130px var(--roboto);
+  text-transform: uppercase;
+}
+
+.button-group button + button {
+  padding-left: 3rem;
+}
+
+.our-project > .title h4 {
+  font: normal 500 25px/12px var(--roboto);
+}
+
+.img a:hover img {
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+/* Endf Project Area */
+
+/* Start About Me */
+
+.about-title p {
+  padding: 1rem 7rem;
+}
+
+.client {
+  background: #ffffff10;
+  box-shadow: var(--box-shadow);
+  margin: 3rem 0rem;
+}
+
+.client-img {
+  padding: 2rem;
+}
+
+.about-client {
+  padding-top: 2rem;
+}
+
+.about-client h4 {
+  font: normal 500 21px/20px var(--roboto);
+}
+
+.about-client p {
+  font-size: 18px;
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--primary-color);
+  width: 12px;
+  height: 12px;
+}
+
+/* End About Ma */
+
+/* Start Sabscribe me */
+.subscribe {
+  background: url(../img/subscribe-bg.png) no-repeat;
+  padding: 10rem 0;
+  margin: 3rem auto;
+}
+
+.subscribe-title h4 {
+  font: normal 700 30px/30px var(--roboto);
+  color: whitesmoke;
+}
+
+.subscribe-title p {
+  color: whitesmoke;
+  padding: 1rem 2rem;
+}
+
+.subscribe form .input-textbox input {
+  width: 350px;
+  padding: 1.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: whitesmoke;
+  font: normal 500 17px/20px var(--roboto);
+}
+
+.subscribe form .input-textbox input::placeholder {
+  color: whitesmoke;
+}
+
+.subscribe form .btn-submit button {
+  background: whitesmoke;
+  color: black;
+  padding: 0.7rem 2rem;
+}
+/* End Subscribe me */
+
+/* Start footer area */
+footer.footer-area {
+  padding: 5rem 0;
+  background: url(../img/footer-bg.png) no-repeat;
+}
+
+.social h5 {
+  font: normal 600 23px/30px var(--roboto);
+}
+
+.social a > i {
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+.social a:hover > i {
+  color: var(--primary-color);
+}
+/* End footer area */
